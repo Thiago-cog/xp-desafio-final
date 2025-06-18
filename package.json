@@ -1,0 +1,23 @@
+{
+  "name": "xp-desafio-final",
+  "version": "1.0.0",
+  "description": "Desafio final da arquitetura de software",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thiago-cog/xp-desafio-final.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thiago-cog/xp-desafio-final/issues"
+  },
+  "homepage": "https://github.com/Thiago-cog/xp-desafio-final#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
