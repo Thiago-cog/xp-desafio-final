@@ -1,6 +1,10 @@
 # xp-desafio-final
 Desafio final da arquitetura de software
+---
 
+## 📁 Estrutura de Pastas
+
+```bash
 .
 ├── node_modules/
 ├── src/
@@ -20,3 +24,34 @@ Desafio final da arquitetura de software
 ├── package.json
 ├── package-lock.json
 └── README.md
+```
+
+### 📂 src/controllers/produto.js
+Responsável por controlar a lógica de negócio da entidade `produto`.  
+Recebe requisições das rotas e interage com os models para manipular os dados.
+
+---
+
+### 📂 src/models/produto.js
+Define as funções responsáveis por acessar e manipular os dados da entidade `produto` no banco de dados.  
+Pode usar SQL puro, bibliotecas como `mysql2`, ou ORMs como Sequelize.
+
+---
+
+### 📂 src/database/conector.js
+Contém a configuração de conexão com o banco de dados.  
+Centraliza os dados de acesso (host, user, password, database).  
+Exemplo: criação de uma pool de conexões com `mysql2` ou `pg`.
+
+---
+
+### 📂 src/routers/produto.js
+Define as rotas da aplicação para a entidade `produto`.  
+Cada rota aponta para uma função no controller correspondente.  
+Exemplo: `GET /produtos` chama `ProdutoController.listar()`.
+
+---
+
+### 📂 src/views/produto.html
+Arquivo de visualização (HTML).  
+Utilizado quando a aplicação renderiza páginas no servidor, como com `res.sendFile()` ou `res.render()`.
